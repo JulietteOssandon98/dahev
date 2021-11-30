@@ -21,9 +21,31 @@ class PrimeraPantalla extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Text('Bienvenido a Hotel Pet'),
+              Text('No sólo tú estarás de'),
+              Text('VACACIONES,'),
+              Text('ellos también lo estarán'),
               const Image(
                 image: NetworkImage(
                     'https://static1.st8fm.com/es_US/img/si/750/dog-health-issues-by-breed-and-common-cat-diseases.jpg'),
+              ),
+              const SizedBox(height: 30),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => TerceraPantalla()));
+                },
+                child: const Text('Reserva su estadía'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => SegundaPantalla()));
+                },
+                child: const Text('Revisa nuestros servicios'),
               ),
             ],
           ),
@@ -31,7 +53,7 @@ class PrimeraPantalla extends StatelessWidget {
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
           tooltip: 'Sumado',
-          child: Icon(Icons.add),
+          child: Icon(Icons.call),
         ));
   }
 }
