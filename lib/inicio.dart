@@ -18,7 +18,6 @@ class PrimeraPantalla extends StatelessWidget {
         ),
         body: Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
               Text(
                 'Bienvenido a Hotel Pet',
@@ -28,13 +27,15 @@ class PrimeraPantalla extends StatelessWidget {
                   fontSize: 25,
                 ),
               ),
-              Text(
-                'No sólo tú estarás de',
-                style: TextStyle(
-                  fontStyle: FontStyle.italic,
-                  fontSize: 20,
-                ),
-              ),
+              Padding(
+                  padding: EdgeInsets.all(16.0),
+                  child: Text(
+                    'No sólo tú estarás de',
+                    style: TextStyle(
+                      fontStyle: FontStyle.italic,
+                      fontSize: 20,
+                    ),
+                  )),
               Text(
                 'VACACIONES,',
                 style: TextStyle(
