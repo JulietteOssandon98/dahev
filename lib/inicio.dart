@@ -20,10 +20,35 @@ class PrimeraPantalla extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text('Bienvenido a Hotel Pet'),
-              Text('No sólo tú estarás de'),
-              Text('VACACIONES,'),
-              Text('ellos también lo estarán'),
+              Text(
+                'Bienvenido a Hotel Pet',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontStyle: FontStyle.italic,
+                  fontSize: 25,
+                ),
+              ),
+              Text(
+                'No sólo tú estarás de',
+                style: TextStyle(
+                  fontStyle: FontStyle.italic,
+                  fontSize: 20,
+                ),
+              ),
+              Text(
+                'VACACIONES,',
+                style: TextStyle(
+                  fontStyle: FontStyle.italic,
+                  fontSize: 23,
+                ),
+              ),
+              Text(
+                'ellos también lo estarán',
+                style: TextStyle(
+                  fontStyle: FontStyle.italic,
+                  fontSize: 20,
+                ),
+              ),
               const Image(
                 image: NetworkImage(
                     'https://static1.st8fm.com/es_US/img/si/750/dog-health-issues-by-breed-and-common-cat-diseases.jpg'),
