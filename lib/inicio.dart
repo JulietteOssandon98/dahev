@@ -18,7 +18,7 @@ class PrimeraPantalla extends StatelessWidget {
         ),
         body: Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
               Text(
                 'Bienvenido a Hotel Pet',
