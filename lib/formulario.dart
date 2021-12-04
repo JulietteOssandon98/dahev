@@ -12,16 +12,8 @@ class _TerceraPantallaEstado extends State<TerceraPantalla> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-            title: Text("Formulario"),
-            leading: CloseButton(),
-            actions: <Widget>[
-              TextButton(
-                onPressed: () {
-                  print("TextButton Apretado");
-                },
-                child: const Text("Guardar"),
-              )
-            ]),
+          title: const Text('Formulario'),
+        ),
         body: Container(
             alignment: Alignment.center,
             padding: const EdgeInsets.all(80),

@@ -8,23 +8,38 @@ class SegundaPantalla extends StatefulWidget {
 }
 
 class _SegundaPantallaEstado extends State<SegundaPantalla> {
+  final _controller = TextEditingController.fromValue(
+      const TextEditingValue(text: "Valor Inicial"));
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-            title: Text("Servicios"),
-            leading: CloseButton(),
-            actions: <Widget>[
-              TextButton(
-                onPressed: () {
-                  print("TextButton Apretado");
-                },
-                child: const Text("Guardar"),
-              )
-            ]),
-        body: Container(
-            alignment: Alignment.center,
-            padding: const EdgeInsets.all(80),
-            child: const Text('Servicios')));
+      appBar: AppBar(
+        title: Text("Servicios Hotel Pet"),
+      ),
+      body: Container(
+          child: Card(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget>[
+            const ListTile(
+              leading: Icon(Icons.pets),
+              title: Text('The Enchanted Nightingale'),
+              subtitle: Text('Music by Julie Gable. Lyrics by Sidney Stein.'),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                TextButton(
+                  child: const Text('Reservar'),
+                  onPressed: () {/* ... */},
+                ),
+                const SizedBox(width: 8),
+              ],
+            ),
+          ],
+        ),
+      )),
+    );
   }
 }
