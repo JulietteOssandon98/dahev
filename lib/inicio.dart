@@ -71,6 +71,13 @@ class PrimeraPantalla extends StatelessWidget {
               },
               child: const Text('Revisa nuestros servicios'),
             ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => CuartaPantalla()));
+              },
+              child: const Text('Juega con los gestos'),
+            ),
           ],
         ),
       ),

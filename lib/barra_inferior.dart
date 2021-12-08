@@ -9,7 +9,12 @@ class BarraInferior extends StatefulWidget {
 
 class _BarraEstado extends State<BarraInferior> {
   int _currentIndex = 0;
-  final views = [PrimeraPantalla(), SegundaPantalla(), TerceraPantalla()];
+  final views = [
+    PrimeraPantalla(),
+    SegundaPantalla(),
+    TerceraPantalla(),
+    CuartaPantalla(),
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -17,11 +22,22 @@ class _BarraEstado extends State<BarraInferior> {
       body: views[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Inicio'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.business), label: 'Servicios'),
+              icon: Icon(Icons.home),
+              label: 'Inicio',
+              backgroundColor: Colors.lightBlue),
           BottomNavigationBarItem(
-              icon: Icon(Icons.dynamic_form), label: 'Formulario'),
+              icon: Icon(Icons.business),
+              label: 'Servicios',
+              backgroundColor: Colors.blue),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.dynamic_form),
+              label: 'Formulario',
+              backgroundColor: Colors.blue),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.pets),
+              label: 'Macotas',
+              backgroundColor: Colors.blue),
         ],
         currentIndex: _currentIndex,
         onTap: (index) {
