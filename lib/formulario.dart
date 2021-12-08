@@ -24,11 +24,11 @@ class _TerceraPantallaEstado extends State<TerceraPantalla> {
               Padding(
                 padding: EdgeInsets.all(50.0),
                 child: Text(
-                  'Formulario',
+                  'Formulario de mascota',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontStyle: FontStyle.italic,
-                    fontSize: 30,
+                    fontSize: 25,
                   ),
                 ),
               ),
@@ -113,7 +113,7 @@ class _TerceraPantallaEstado extends State<TerceraPantalla> {
                       // Process data.
                     }
                   },
-                  child: const Text('Submit'),
+                  child: const Text('Enviar'),
                 ),
               ),
             ],
