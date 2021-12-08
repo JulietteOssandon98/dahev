@@ -20,17 +20,18 @@ class _CuartaPantallaEstado extends State<CuartaPantalla> {
           });
         },
         child: Container(
-            decoration: BoxDecoration(
-                image: DecorationImage(
-              image: AssetImage("../assets/patitas.jpg"),
-              fit: BoxFit.cover,
-            )),
+            color: Colors.white,
             child: Column(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text("¿Cuáantas Patitas encuentras? $_counter",
+                const Image(
+                  image: NetworkImage(
+                      'https://image.freepik.com/vector-gratis/diseno-patron-pow-colorido-lindo-gatito_1017-14710.jpg'),
+                ),
+                Text("¿cuántas patitas tocarás? $_counter",
                     style: Theme.of(context).textTheme.headline4),
+                Padding(padding: EdgeInsets.all(10.0)),
                 ElevatedButton(
                     onPressed: () {
                       Navigator.pop(context);
