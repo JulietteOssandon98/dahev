@@ -7,38 +7,40 @@ class CuartaPantalla extends StatefulWidget {
   State<CuartaPantalla> createState() => _CuartaPantallaEstado();
 }
 
-class _CuartaPantallaEstado extends State<CuartaPantalla> {
+class _CuartaPantallaEstado extends State<CuartaPantalla>
+    with TickerProviderStateMixin {
+  late final AnimationController _controller = AnimationController(
+    duration: const Duration(seconds: 2),
+    vsync: this,
+  )..repeat(reverse: true);
+  late final Animation<double> _animation = CurvedAnimation(
+    parent: _controller,
+    curve: Curves.elasticOut,
+  );
   int _counter = 0;
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Juego"),
-      ),
-      body: Container(
-          child: GestureDetector(
-              onTap: () {
-                print("hola mundo, el conteo es $_counter");
-                setState(() {
-                  _counter++;
-                });
-              },
-              child: Container(
-                  color: Colors.white,
-                  child: Column(
-                    mainAxisSize: MainAxisSize.max,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      const Image(
-                        image: NetworkImage(
-                            'https://image.freepik.com/vector-gratis/diseno-patron-pow-colorido-lindo-gatito_1017-14710.jpg'),
-                      ),
-                      Padding(padding: EdgeInsets.all(20.0)),
-                      Text("¿ Cuántas patitas hay ? $_counter",
-                          style: Theme.of(context).textTheme.headline4),
-                    ],
-                  )))),
-    );
+        appBar: AppBar(
+          title: Text("Animación"),
+        ),
+        body: Container(
+          child: RotationTransition(
+              turns: _animation,
+              child: const Padding(
+                padding: EdgeInsets.only(top: 100),
+                child: const Image(
+                  image: NetworkImage(
+                      'https://cdn-icons.flaticon.com/png/512/2437/premium/2437643.png?token=exp=1639025803~hmac=2419f41c4bb2ad89de2ceea5de4ea9dd'),
+                ),
+              )),
+        ));
   }
 }

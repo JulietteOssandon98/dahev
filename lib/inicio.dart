@@ -10,26 +10,17 @@ class PrimeraPantalla extends StatelessWidget {
         title: const Text('Hotel Pet'),
       ),
       body: Container(
+        color: Colors.white,
         child: Column(
           children: <Widget>[
             Padding(
-              padding: EdgeInsets.all(30.0),
-              child: Text(
-                'Bienvenido a Hotel Pet',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontStyle: FontStyle.italic,
-                  fontSize: 30,
-                ),
-              ),
-            ),
-            Padding(
-                padding: EdgeInsets.all(10.0),
+                padding: EdgeInsets.only(top: 40, bottom: 10),
                 child: Text(
                   'No sólo tú estarás de',
                   style: TextStyle(
                     fontStyle: FontStyle.normal,
-                    fontSize: 20,
+                    fontSize: 25,
+                    color: Colors.blue,
                   ),
                 )),
             Padding(
@@ -37,46 +28,33 @@ class PrimeraPantalla extends StatelessWidget {
               child: Text(
                 'VACACIONES,',
                 style: TextStyle(
-                  fontStyle: FontStyle.italic,
-                  fontSize: 23,
-                ),
+                    fontStyle: FontStyle.italic,
+                    fontSize: 28,
+                    color: Colors.blue),
               ),
             ),
             Padding(
-              padding: EdgeInsets.all(10.0),
+              padding: EdgeInsets.only(top: 10, bottom: 20),
               child: Text(
                 'ellos también lo estarán',
                 style: TextStyle(
                   fontStyle: FontStyle.normal,
-                  fontSize: 20,
+                  fontSize: 25,
+                  color: Colors.blue,
                 ),
               ),
             ),
             const Image(
               image: NetworkImage(
-                  'https://static1.st8fm.com/es_US/img/si/750/dog-health-issues-by-breed-and-common-cat-diseases.jpg'),
+                  'https://image.freepik.com/vector-gratis/lindo-perro-gato-amigo-caricatura_138676-2432.jpg'),
             ),
-            const SizedBox(height: 30),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => TerceraPantalla()));
               },
               child: const Text('Reserva su estadía'),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => SegundaPantalla()));
-              },
-              child: const Text('Revisa nuestros servicios'),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => CuartaPantalla()));
-              },
-              child: const Text('Juega con los gestos'),
             ),
           ],
         ),

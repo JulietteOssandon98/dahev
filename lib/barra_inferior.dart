@@ -27,16 +27,16 @@ class _BarraEstado extends State<BarraInferior> {
               label: 'Inicio',
               backgroundColor: Colors.lightBlue),
           BottomNavigationBarItem(
-              icon: Icon(Icons.business),
+              icon: Icon(Icons.room_service),
               label: 'Servicios',
               backgroundColor: Colors.blue),
           BottomNavigationBarItem(
-              icon: Icon(Icons.dynamic_form),
+              icon: Icon(Icons.list),
               label: 'Formulario',
               backgroundColor: Colors.blue),
           BottomNavigationBarItem(
               icon: Icon(Icons.pets),
-              label: 'Macotas',
+              label: 'Animación',
               backgroundColor: Colors.blue),
         ],
         currentIndex: _currentIndex,

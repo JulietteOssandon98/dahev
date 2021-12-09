@@ -16,13 +16,14 @@ class _TerceraPantallaEstado extends State<TerceraPantalla> {
         title: Text("Formulario"),
       ),
       body: Container(
+        margin: EdgeInsets.all(20.0),
         child: Form(
           key: _formKey,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Padding(
-                padding: EdgeInsets.all(50.0),
+                padding: EdgeInsets.all(40.0),
                 child: Text(
                   'Formulario de mascota',
                   style: TextStyle(
@@ -107,11 +108,7 @@ class _TerceraPantallaEstado extends State<TerceraPantalla> {
                 padding: const EdgeInsets.all(30.0),
                 child: ElevatedButton(
                   onPressed: () {
-                    // Validate will return true if the form is valid, or false if
-                    // the form is invalid.
-                    if (_formKey.currentState!.validate()) {
-                      // Process data.
-                    }
+                    if (_formKey.currentState!.validate()) {}
                   },
                   child: const Text('Enviar'),
                 ),
