@@ -110,7 +110,7 @@ class _TerceraPantallaEstado extends State<TerceraPantalla> {
                   onPressed: () {
                     if (_formKey.currentState!.validate()) {}
                   },
-                  child: const Text('Enviar'),
+                  child: const Text('Guardar mascota'),
                 ),
               ),
             ],

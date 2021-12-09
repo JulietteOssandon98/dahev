@@ -38,7 +38,7 @@ class _CuartaPantallaEstado extends State<CuartaPantalla>
                 padding: EdgeInsets.only(top: 100),
                 child: const Image(
                   image: NetworkImage(
-                      'https://cdn-icons.flaticon.com/png/512/2437/premium/2437643.png?token=exp=1639025803~hmac=2419f41c4bb2ad89de2ceea5de4ea9dd'),
+                      'https://cdn-icons.flaticon.com/png/512/2437/premium/2437643.png?token=exp=1639065253~hmac=350fc3185958b5cc3746e64f1bcffccb'),
                 ),
               )),
         ));
