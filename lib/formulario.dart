@@ -25,48 +25,13 @@ class _TerceraPantallaEstado extends State<TerceraPantalla> {
               Padding(
                 padding: EdgeInsets.all(40.0),
                 child: Text(
-                  'Formulario de mascota',
+                  'Agregar mi mascota',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontStyle: FontStyle.italic,
                     fontSize: 25,
                   ),
                 ),
-              ),
-              TextFormField(
-                decoration: const InputDecoration(
-                  hintText: 'Nombre y Apellido',
-                ),
-                validator: (String? value) {
-                  if (value == null || value.isEmpty) {
-                    return 'Please enter some text';
-                  }
-                  return null;
-                },
-              ),
-              Padding(padding: EdgeInsets.all(10.0)),
-              TextFormField(
-                decoration: const InputDecoration(
-                  hintText: 'Email',
-                ),
-                validator: (String? value) {
-                  if (value == null || value.isEmpty) {
-                    return 'Please enter some text';
-                  }
-                  return null;
-                },
-              ),
-              Padding(padding: EdgeInsets.all(10.0)),
-              TextFormField(
-                decoration: const InputDecoration(
-                  hintText: '+569 99999999',
-                ),
-                validator: (String? value) {
-                  if (value == null || value.isEmpty) {
-                    return 'Please enter some text';
-                  }
-                  return null;
-                },
               ),
               Padding(padding: EdgeInsets.all(10.0)),
               TextFormField(
@@ -84,6 +49,29 @@ class _TerceraPantallaEstado extends State<TerceraPantalla> {
               TextFormField(
                 decoration: const InputDecoration(
                   hintText: 'Dirección',
+                ),
+                validator: (String? value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Please enter some text';
+                  }
+                  return null;
+                },
+              ),
+              TextFormField(
+                decoration: const InputDecoration(
+                  hintText: 'Email',
+                ),
+                validator: (String? value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Please enter some text';
+                  }
+                  return null;
+                },
+              ),
+              Padding(padding: EdgeInsets.all(10.0)),
+              TextFormField(
+                decoration: const InputDecoration(
+                  hintText: '+569 99999999',
                 ),
                 validator: (String? value) {
                   if (value == null || value.isEmpty) {

@@ -52,7 +52,7 @@ class PrimeraPantalla extends StatelessWidget {
             ElevatedButton(
               onPressed: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => TerceraPantalla()));
+                    MaterialPageRoute(builder: (context) => SegundaPantalla()));
               },
               child: const Text('Reserva su estadía'),
             ),

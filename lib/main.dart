@@ -6,7 +6,7 @@ part 'inicio.dart';
 part 'servicios.dart';
 part 'formulario.dart';
 part 'barra_inferior.dart';
-part 'gestos.dart';
+part 'user.dart';
 
 void main() {
   runApp(const MaterialApp(

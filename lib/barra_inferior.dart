@@ -24,19 +24,19 @@ class _BarraEstado extends State<BarraInferior> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
               icon: Icon(Icons.home),
-              label: 'Inicio',
+              label: 'Home',
               backgroundColor: Colors.lightBlue),
           BottomNavigationBarItem(
               icon: Icon(Icons.room_service),
-              label: 'Servicios',
+              label: 'Services',
               backgroundColor: Colors.blue),
           BottomNavigationBarItem(
               icon: Icon(Icons.list),
-              label: 'Formulario',
+              label: 'Form',
               backgroundColor: Colors.blue),
           BottomNavigationBarItem(
               icon: Icon(Icons.pets),
-              label: 'Animación',
+              label: 'User',
               backgroundColor: Colors.blue),
         ],
         currentIndex: _currentIndex,
