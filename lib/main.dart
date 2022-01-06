@@ -7,6 +7,7 @@ part 'servicios.dart';
 part 'formulario.dart';
 part 'barra_inferior.dart';
 part 'user.dart';
+part 'serviceform.dart';
 
 void main() {
   runApp(const MaterialApp(

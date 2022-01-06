@@ -43,7 +43,12 @@ class _SegundaPantallaEstado extends State<SegundaPantalla> {
                     ),
                   ),
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => QuintaPantalla()));
+                    },
                     child: const Text('Reservar'),
                   ),
                   Padding(padding: EdgeInsets.all(10.0)),
@@ -63,7 +68,12 @@ class _SegundaPantallaEstado extends State<SegundaPantalla> {
                     ),
                   ),
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => QuintaPantalla()));
+                    },
                     child: const Text('Reservar'),
                   ),
                 ],

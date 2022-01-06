@@ -57,6 +57,7 @@ class _TerceraPantallaEstado extends State<TerceraPantalla> {
                   return null;
                 },
               ),
+              Padding(padding: EdgeInsets.all(10.0)),
               TextFormField(
                 decoration: const InputDecoration(
                   hintText: 'Email',
